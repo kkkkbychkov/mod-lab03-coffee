@@ -20,7 +20,7 @@ class Automata {
     int sizeMenu;
 
     public:
-        Automate(std::string menu[], int prices[], int size);
+        Automata(std::string menu[], int prices[], int size);
         std::string On();
         std::string Off();
         std::string Coin(int);
@@ -31,4 +31,4 @@ class Automata {
         std::string Cancel();
         std::string Cook();
         std::string Finish();
-}
+};
