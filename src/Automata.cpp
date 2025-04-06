@@ -28,6 +28,14 @@ std::string Automata::Coin(int money) {
     return strRes;
 }
 
+std::string Automata::GetMenu() {
+    std::string strRes = "\nMenu machine\n";
+    for (int i = 0; i < sizeMenu; i++) {
+        strRes += menu[i] + ": " + std::to_string(prices[i]) + " rubels\n";
+    }
+    return strRes + "\n";
+}
+
 std::string Automata::getState() {
     std::string strRes = "Cannot be performed\n";
      switch (state) {

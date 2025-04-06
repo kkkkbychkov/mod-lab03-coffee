@@ -24,7 +24,7 @@ class Automata {
         std::string On();
         std::string Off();
         std::string Coin(int);
-        std::string etMenu();
+        std::string GetMenu();
         std::string getState();
         std::string Choice(int);
         std::string Check();

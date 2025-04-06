@@ -7,7 +7,7 @@ int main() {
     int prices[]{ 80, 20, 450 };
     Automata DrinkMachine(menu, prices, 3);
     std::cout << DrinkMachine.On();
-    std::cout << DrinkMachine.etMenu();
+    std::cout << DrinkMachine.GetMenu();
     std::cout << DrinkMachine.Coin(50);
     std::cout << DrinkMachine.Choice(1);
     std::cout << DrinkMachine.Choice(0);
