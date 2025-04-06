@@ -1,4 +1,7 @@
+// Copyright 2025 UNN-IASR
+
 #include "Automata.h"
+#include <string>
 
 Automata::Automata(std::string menu[], int prices[], int size) {
     balance = 0;
@@ -23,7 +26,8 @@ std::string Automata::Coin(int money) {
     if (state == WAIT || state == ACCEPT) {
         state = ACCEPT;
         balance += money;
-        strRes = "Received " + std::to_string(money) + ". Balance " + std::to_string(balance) + "\n";
+        strRes = "Received " + std::to_string(money) + ". Balance "
+        + std::to_string(balance) + "\n";
     }
     return strRes;
 }

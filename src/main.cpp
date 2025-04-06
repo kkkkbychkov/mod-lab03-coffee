@@ -1,4 +1,4 @@
-// Copyright 2024 UNN-IASR
+// Copyright 2025 UNN-IASR
 
 #include "Automata.h"
 #include <iostream>
