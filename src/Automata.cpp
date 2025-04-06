@@ -23,8 +23,7 @@ std::string Automata::Coin(int money) {
     if (state == WAIT || state == ACCEPT) {
         state = ACCEPT;
         balance += money;
-        strRes = "Received " + std::to_string(money) + ". Balance " 
-                + std::to_string(balance) + "\n";
+        strRes = "Received " + std::to_string(money) + ". Balance " + std::to_string(balance) + "\n";
     }
     return strRes;
 }
@@ -95,7 +94,6 @@ std::string Automata::Cook() {
         strRes = "Cooking cocktail '" + menu[selected] + "'\n";
         state = COLLECT;
     }
-
     return strRes;
 }
 
@@ -105,6 +103,5 @@ std::string Automata::Finish() {
         strRes = "Switching to standby mode\n";
         state = WAIT;
     }
-
     return strRes;
 }
