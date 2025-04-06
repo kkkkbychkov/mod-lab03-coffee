@@ -18,6 +18,7 @@ class Automata {
         int selected;
 
         int balance;
+
         std::string* menu;
         int* prices;
         STATES state;
@@ -27,6 +28,7 @@ class Automata {
         Automata(std::string menu[], int prices[], int size);
 
         std::string On();
+        
         std::string Off();
         std::string Coin(int);
         std::string GetMenu();
