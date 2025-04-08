@@ -18,7 +18,7 @@ class Automata {
     int selected;
     int balance;
     std::string* menu;
-    int* price;
+    int* prices;
     STATES state;
     int sizeMenu;
 
